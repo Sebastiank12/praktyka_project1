@@ -1,6 +1,18 @@
 @use 'mixins' as *;
 @use 'variables' as *;
 
+@keyframes show-reader-box {
+
+    from {
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
 header{
     height: 100vh;
     background: url('./../assets/img/bg-header.webp') center/cover fixed;
@@ -16,6 +28,7 @@ header{
         padding: 30px;
         display: flex;
         flex-direction: column;
+        animation: show-reader-box 3s linear;
 
     }
 
