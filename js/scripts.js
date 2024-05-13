@@ -1,9 +1,20 @@
 'use strict';
 
-const hamburger = document.querySelector('.material-icons');
+const hamburger = document.querySelector('nav .material-icons');
+ 
+const close = document.querySelector('.navigation .material-icons')
 
+const menudiv = document.querySelector('.navigation');
 console.log(hamburger);
 
 hamburger.addEventListener('click', () => {
-alert('test2');
+
+menudiv.classList.add('showmenu');
+
 })
+
+close.addEventListener('click', () => {
+
+    menudiv.classList.remove('showmenu');
+
+});
