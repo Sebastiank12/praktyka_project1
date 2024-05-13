@@ -18,3 +18,11 @@ close.addEventListener('click', () => {
     menudiv.classList.remove('showmenu');
 
 });
+
+const linksmenu = document.querySelectorAll('.navigation a')
+
+linksmenu.forEach(elem =>{
+    elem.addEventListener('click', () => {
+        menudiv.classList.remove('showmenu');  
+    })
+} )
